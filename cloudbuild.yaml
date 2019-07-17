@@ -1,6 +1,6 @@
 steps:
    
-- name: 'gcr.io/concrete-crow-244606/sonar-scanner'
+- name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
     args:
     - '-Dsonar.host.url=http://35.238.221.161:9000'
     - '-Dsonar.login=c2a7631a6e402c338739091ffbc30e5e3d66cf19'
