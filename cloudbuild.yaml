@@ -1,14 +1,14 @@
 steps:
    
 - name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
-    args:
-    - '-Dsonar.host.url=http://35.238.221.161:9000'
-    - '-Dsonar.login=c2a7631a6e402c338739091ffbc30e5e3d66cf19'
-    - '-Dsonar.projectKey=sample-project'
+  args:
+    - '-Dsonar.host.url=http://35.188.209.183:9000'
+    - '-Dsonar.login=bf37a44df1651c4df21b27fabcd15f4e03d381a5'
+    - '-Dsonar.projectKey=project1'
     - '-Dsonar.sources=.'
  
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/concrete-crow-244606/html-css-website-course', '.' ]
+  args: [ 'build', '-t', 'gcr.io/concrete-crow-244606/project1', '.' ]
 
 images:
-- 'gcr.io/concrete-crow-244606/html-css-website-course'
+- 'gcr.io/concrete-crow-244606/project1'
